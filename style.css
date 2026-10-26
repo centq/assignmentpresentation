@@ -1,0 +1,320 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #eeeeee;
+}
+
+
+/* HEADER */
+
+.header {
+    background-color: #111111;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+.logo {
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: red;
+}
+
+.header p {
+    margin: 5px;
+    color: #cccccc;
+}
+
+
+/* MENU */
+
+.menu {
+    background-color: #e00000;
+    text-align: center;
+    padding: 15px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+
+/* CONTAINER */
+
+.container {
+    width: 90%;
+    margin: 30px auto;
+}
+
+
+/* WELCOME */
+
+.welcome {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-left: 6px solid red;
+}
+
+.welcome h1 {
+    margin-top: 0;
+}
+
+
+/* TABLE */
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 15px;
+}
+
+
+/* TABLE CELL */
+
+td {
+    width: 50%;
+    background-color: white;
+    padding: 0;
+    vertical-align: top;
+    box-shadow: 0px 3px 10px #cccccc;
+}
+
+
+/* MATCH */
+
+.match {
+    text-align: center;
+    padding: 25px;
+}
+
+
+/* LEAGUE */
+
+.league {
+    background-color: #111111;
+    color: white;
+    padding: 8px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+
+/* TEAM CONTAINER */
+
+.teams {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+
+/* TEAM */
+
+.team {
+    width: 40%;
+    text-align: center;
+}
+
+
+/* TEAM LOGO */
+
+.team-logo {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+
+/* TEAM NAME */
+
+.match h2 {
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+
+/* VS */
+
+.vs {
+    color: red;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+/* TIME */
+
+.time {
+    color: #555555;
+    font-weight: bold;
+}
+
+
+/* BUTTON */
+
+button {
+    background-color: #e00000;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+/* BUTTON HOVER */
+
+button:hover {
+    background-color: #990000;
+}
+
+
+/* VIDEO */
+
+.video {
+    display: none;
+    margin-top: 20px;
+}
+
+
+/* IFRAME */
+
+iframe {
+    width: 100%;
+    height: 250px;
+    border: none;
+}
+
+
+/* FOOTER */
+
+.footer {
+    background-color: #111111;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    margin-top: 30px;
+}
+
+
+/* PHONE */
+
+@media screen and (max-width: 700px) {
+
+    .container {
+        width: 95%;
+    }
+
+    table {
+        border-spacing: 10px;
+    }
+
+    tr {
+        display: block;
+    }
+
+    td {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        margin-bottom: 15px;
+    }
+
+    .menu a {
+        display: inline-block;
+        margin: 5px;
+    }
+
+    .logo {
+        font-size: 35px;
+    }
+
+    .match {
+        padding: 15px;
+    }
+
+    .match h2 {
+        font-size: 16px;
+    }
+
+    .team-logo {
+        width: 60px;
+        height: 60px;
+    }
+
+    iframe {
+        height: 220px;
+    }
+
+}
+
+/* HISTORY MATCHES TABLE */
+
+.history-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    margin-top: 20px;
+    box-shadow: 0 2px 8px #cccccc;
+}
+
+.history-table th {
+    background-color: #111111;
+    color: white;
+    padding: 15px;
+}
+
+.history-table td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #dddddd;
+}
+
+.history-table tr:hover {
+    background-color: #fff0f0;
+}
+
+.score {
+    color: #d90000;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.back-button {
+    display: inline-block;
+    background-color: #d90000;
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+}
+
+.back-button:hover {
+    background-color: #990000;
+}
+
+@media screen and (max-width: 600px) {
+    .history-table th,
+    .history-table td {
+        padding: 7px 4px;
+        font-size: 12px;
+    }
+}
